@@ -1,9 +1,9 @@
+import Intercom from './components/Intercom/Intercom';
+
 const App = () => {
 
   return (
-    <>
-        da
-    </>
+    <Intercom/>
   )
 };
 

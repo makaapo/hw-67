@@ -15,15 +15,15 @@ export const intercomSlice = createSlice({
   name: 'intercom',
   initialState,
   reducers: {
-    increase: (state:IntercomState, action: PayloadAction<string>) => {
+    increase: (state: IntercomState, action: PayloadAction<string>) => {
       if (state.value.length < 4) {
         state.value += action.payload;
       }
     },
-    decrease: (state:IntercomState) => {
+    decrease: (state: IntercomState) => {
       state.value = state.value.slice(0, -1);
     },
-    check: (state:IntercomState) => {
+    check: (state: IntercomState) => {
       if (state.value === password) {
         toast.success('Access Granted');
       } else {
@@ -36,5 +36,6 @@ export const intercomSlice = createSlice({
 export const {
   increase,
   decrease,
-  check} = intercomSlice.actions;
+  check
+} = intercomSlice.actions;
 export const intercomReducer = intercomSlice.reducer;

@@ -1,0 +1,25 @@
+.intercom-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  max-width: 312px;
+  margin: auto;
+}
+
+.password-display {
+  font-size: 40px;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  height: 60px;
+}
