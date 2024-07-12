@@ -2,7 +2,6 @@ import React from 'react';
 import {useDispatch, useSelector} from 'react-redux';
 import {AppDispatch, RootState} from '../../app/store';
 import {check, decrease, increase} from '../../container/Intercom/intercomSlice';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import './Intercom.css';
 
 const Intercom: React.FC = () => {
